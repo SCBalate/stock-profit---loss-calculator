@@ -22,12 +22,12 @@ function calculateProfitAndLoss(purchase, quantity, current) {
     } else {
         if (purchase > current) {
             var loss = (purchase - current) * quantity;
-            var lossPercentage = (loss / initial) * 100;
+            var lossPercentage = loss / (purchase*quantity) * 100;
 
             showOutput(`Whoops!! Your loss is ${loss} and loss percentage is ${lossPercentage.toFixed(2)}%`);
         } else if (current > purchase) {
             var profit = (current - purchase) * quantity;
-            var profitPercentage = (profit / purchase) * 100;
+            var profitPercentage = profit / (purchase*quantity) * 100;
 
             showOutput(`Yay!! Your profit is ${profit} and the profit percentage is ${profitPercentage.toFixed(2)}%`);
         } else {

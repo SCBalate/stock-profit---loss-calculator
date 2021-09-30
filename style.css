@@ -1,0 +1,51 @@
+*{
+    margin:0;
+}
+header{
+    width:100%;
+    height:4.5rem;
+    background-color: rgb(0, 247, 255);
+    color:blue;
+    text-align:center;
+}
+h1{
+    padding:1.5rem;  
+
+}
+img{
+    width:100%;
+    height:90%;
+    z-index:-1;
+    background-size: cover;
+    background-blend-mode: multiply; 
+    position: absolute;
+    filter: blur(1px);
+   
+}
+input,label{
+    display:block;
+    margin:auto;
+    text-align: center;
+     margin-top:0.5rem; 
+    padding:0.2rem;
+    width:50%;
+}
+label{
+    margin-bottom:0.1rem;
+    color:aqua;
+}
+#check-btn {
+margin-top:1.5rem;
+display:block;
+margin:auto;
+color:blue;
+background-color: cyan;
+width:10%;
+border-radius:5rem;
+}
+#output{
+    text-align:center;
+margin-top:1.5rem;
+font-size:1.2rem;
+color:rgb(0, 255, 21);
+    }
